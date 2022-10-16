@@ -21,7 +21,7 @@ text-decoration: none;
   --title-color: #212121;
   --text-color: #757575;
   --contacts-color: #757575;
-  --accent-color: #2196f3;
+  --accent-color:#2196f3;
   --team-name-color: #212121;
   --hero-color: #ffffff;
 }
@@ -113,6 +113,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
+  transition: color 250ms linear;
 }
 
 .header-contact {
@@ -122,12 +123,12 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+
 }
 
 .nav-link,
 .nav-icon {
   color: var(--contacts-color);
-  fill: var(--contacts-color);
 }
 
 .nav-link:hover,
@@ -142,7 +143,7 @@ img {
 
 .nav-icon {
   margin-right: 10px;
-  /* fill: #757575; */
+  fill: currentColor;
 }
 
 .nav-link {
@@ -169,7 +170,7 @@ img {
   content: '';
   width: 100%;
   height: 4px;
-  background: #2196f3;
+  background: var(--accent-color);
   border-radius: 2px;
   position: absolute;
   bottom: -34px;
@@ -217,7 +218,7 @@ img {
   cursor: pointer;
   margin: 0 auto;
   margin-top: 30px;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 216px;
@@ -227,7 +228,7 @@ img {
 }
 
 .hero-btn {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 /* ____________BENEFITS_____________ */
@@ -326,7 +327,7 @@ img {
 
 .team-item {
   width: calc((100% - 120px) / 4);
-  background: #ffffff;
+  background: var(--hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -358,14 +359,16 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--hero-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms linear;
 }
 
 .team-soc-icon {
   fill: #afb1b8;
+  transition: fill 250ms linear;
 }
 
 .team-soc-link:hover,
@@ -400,26 +403,28 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--hero-color);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: border 250ms linear;
 }
 
 .client-soc:hover,
 .client-soc:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
   /* color: #AFB1B8 ; */
 }
 
 .client-soc:hover .client-logo,
 .client-soc:focus .client-logo {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 .client-logo {
   fill: #afb1b8;
+  transition: fill 250ms linear;
 }
 
 /* _________________FOOTER+FOOTER(PORTFOLIO)__________ */
@@ -454,7 +459,7 @@ img {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  /* padding-bottom: 9px; */
+  transition: color 250ms linear;
 }
 
 .footer-item {
@@ -472,7 +477,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--hero-color);
   margin-bottom: 20px;
 }
 
@@ -484,10 +489,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms linear;
 }
 
 .footer-soc-icon {
-  fill: #ffffff;
+  fill: var(--hero-color);
 }
 
 .footer-soc-link:hover,
@@ -525,7 +531,7 @@ img {
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--hero-color);
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -542,14 +548,13 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
-  /* min-width: 122px;
-  height: 38px; */
   border: none;
+  transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
 }
 
 .everyone {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--hero-color);
 }
 
 /* __________________POJECTS_____________ */
@@ -570,7 +575,7 @@ img {
 .portfolio-projects-content {
   padding: 20px 24px;
   min-width: 322px;
-  background: #ffffff;
+  background: var(--hero-color);
   border: 1px solid #eeeeee;
 }
 
@@ -635,7 +640,7 @@ img {
   position: absolute;
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
+  background-color: var(--hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -652,7 +657,7 @@ img {
 .modal-btn {
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background: var(--hero-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
