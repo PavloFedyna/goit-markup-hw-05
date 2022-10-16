@@ -21,7 +21,7 @@ text-decoration: none;
   --title-color: #212121;
   --text-color: #757575;
   --contacts-color: #757575;
-  --accent-color:#2196f3;
+  --accent-color: #2196f3;
   --team-name-color: #212121;
   --hero-color: #ffffff;
 }
@@ -113,7 +113,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact {
@@ -123,7 +123,6 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
-
 }
 
 .nav-link,
@@ -363,12 +362,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
   fill: #afb1b8;
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -408,7 +407,7 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: border 250ms linear;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-soc:hover,
@@ -424,7 +423,7 @@ img {
 
 .client-logo {
   fill: #afb1b8;
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* _________________FOOTER+FOOTER(PORTFOLIO)__________ */
@@ -459,7 +458,7 @@ img {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item {
@@ -489,7 +488,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
@@ -549,7 +548,9 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   border: none;
-  transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .everyone {
@@ -593,6 +594,7 @@ img {
 
 .portfolio-projects-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-projects-link:hover,
