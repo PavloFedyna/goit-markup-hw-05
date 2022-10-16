@@ -603,9 +603,12 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-projects-item:hover .projects-text {
+
+.portfolio-projects-link:hover .projects-text,
+.portfolio-projects-link:focus .projects-text {
   transform: translateY(0);
 }
+
 
 .projects-wrap {
   position: relative;
